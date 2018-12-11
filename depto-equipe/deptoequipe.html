@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pagina da equipe">
+    <meta name="author" content="Pandorium">
+
+    <title>Página da Equipe</title>	
+		
+    <!-- Font Awesome -->
+		<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- JQuery -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"></script>
+		<script
+			src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+			crossorigin="anonymous"></script>
+		<link href = "https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel = "stylesheet">
+		
+		<!-- Popper -->
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+		
+		<!-- Local -->
+		<script src = "deptoequipe.js"></script>
+		<link href = "deptoequipe.css" rel="stylesheet">
+  </head>
+	
+  <body>
+    <main role="main">
+			<!-- Container Principal -->
+      <div class="container mt-3">
+				<!-- Sortable -->
+				<!-- Os IDs de cada departamento e nome devem ser unicos! -->
+				<!-- Preferencialmente sequencial, para correspondencia um a um com o BD -->
+				<div class = "sortable-cards">
+					<!-- Sortable Card -->
+						<div class="card mb-3 border-success shadow">
+							<div class="card-header h5 text-white bg-success shadow">Departamento 1
+							<button data-toggle="collapse" data-target="#departamento-1" id = "botao-1" class = "btn btn-success pull-right" onClick = "reply_click(this.id)"><i id = "icon-1" class = "fa fa-plus icon-toggle"></i></button>
+							</div>
+							<div class="card-body sortable-names collapse" id = "departamento-1">
+								<h5 class="depto-nome" id = "nome-1">Nome 1</h5>
+								<h5 class="depto-nome" id = "nome-2">Nome 2</h5>
+								<h5 class="depto-nome" id = "nome-3">Nome 3</h5>
+							</div>
+						</div>
+					<!-- /Sortable Card -->
+					
+					<!-- Sortable Card -->
+						<div class="card mb-3 border-success shadow">
+							<div class="card-header h5 text-white bg-success shadow">Departamento 2
+								<button data-toggle = "collapse" data-target = "#departamento-2" id = "botao-2" class = "btn btn-success pull-right" onClick = "reply_click(this.id)"><i id = "icon-2" class="fa fa-plus"></i></button>
+							</div>
+							<div class="card-body sortable-names collapse" id = "departamento-2">
+								<h5 class="depto-nome" id = "nome-4">Nome 4</h5>
+								<h5 class="depto-nome" id = "nome-5">Nome 5</h5>
+								<h5 class="depto-nome" id = "nome-6">Nome 6</h5>
+							</div>
+						</div>
+					<!-- /Sortable Card -->
+					
+					<!-- Sortable Card -->
+						<div class="card mb-3 border-success shadow">
+							<div class="card-header h5 text-white bg-success shadow">Departamento 3
+								<button data-toggle = "collapse" data-target = "#departamento-3" id = "botao-3" class = "btn btn-success pull-right" onClick = "reply_click(this.id)"><i id = "icon-3" class="fa fa-plus"></i></button>
+							</div>
+							<div class="card-body sortable-names collapse" id = "departamento-3">
+								<h5 class="depto-nome" id = "nome-7">Nome 7</h5>
+								<h5 class="depto-nome" id = "nome-8">Nome 8</h5>
+								<h5 class="depto-nome" id = "nome-9">Nome 9</h5>
+							</div>
+						</div>
+					<!-- /Sortable Card -->
+					
+					<!-- Sortable Card -->
+						<div class="card mb-3 border-success shadow">
+							<div class="card-header h5 text-white bg-success shadow">Departamento 4
+								<button data-toggle = "collapse" data-target = "#departamento-4" id = "botao-4" class = "btn btn-success pull-right" onClick = "reply_click(this.id)"><i id = "icon-4" class="fa fa-plus"></i></button>
+							</div>
+							<div class="card-body sortable-names collapse" id = "departamento-4">
+								<h5 class="depto-nome" id = "nome-10">Nome 10</h5>
+								<h5 class="depto-nome" id = "nome-11">Nome 11</h5>
+								<h5 class="depto-nome" id = "nome-12">Nome 12</h5>
+							</div>
+						</div>
+					<!-- /Sortable Card -->					
+				</div>
+				<!-- /Sortable -->
+				<button class = "btn btn-success" onclick="salvar();"><i class = "fa fa-check"> </i> Salvar Alterações</button>
+				<a href = "#" class = "btn btn-info"><i class = "fa fa-plus"></i> Novo Setor</a>
+			</div>
+			<!-- /Container Principal -->
+    </main>
+  </body>
+</html>
