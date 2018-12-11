@@ -1,9 +1,9 @@
 ### Uso
 
-* #### Incluir todas as dependências
+* #### Incluir todas as dependências (na ordem que está)
 
 * #### deptoequipe.js
-  * function salvar: nela contém a ordenação de departamentos e membros da equipe por departamento
+  * function salvar: nela contém a ordenação de departamentos e membros da equipe por departamento (saída no console)
     * Ex: departamento2: ['nome4', 'nome6', nome'7']
     * departamento1: ['nome3', 'nome1', 'nome2']
 
